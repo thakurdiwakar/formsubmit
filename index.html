@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="form-container">
+      <div class="text">Contact Us</div>
+      <form action="https://formsubmit.co/ds6228353@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false" />
+        <div class="form-row">
+          <div class="input-form">
+            <input type="text" name="name" required />
+            <div class="underlined"></div>
+            <label>First Name</label>
+          </div>
+          <div class="input-form">
+            <input type="text" name="last name" required />
+            <div class="underlined"></div>
+            <label>Last Name</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="input-form">
+            <input type="text" name="email" required />
+            <div class="underlined"></div>
+            <label>Email Address</label>
+          </div>
+          <div class="input-form">
+            <input type="text" name="phone" required />
+            <div class="underlined"></div>
+            <label>Phone No</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="input-form textarea">
+            <textarea cols="30" rows="10" name="message" required></textarea>
+            <div class="underlined"></div>
+            <label>Message</label>
+          </div>
+        </div>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://thakurdiwakar.github.io/formsubmit/thanks.html"
+        />
+        <div class="form-row submit-btn">
+          <div class="input-form">
+            <div class="inner"></div>
+
+            <input type="submit" class="submit" value="submit" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
